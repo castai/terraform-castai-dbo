@@ -53,18 +53,4 @@ locals {
       }] : []
     )
   ])
-
-  endpoint_connections = {
-    for idx, endpoint in data.castai_cache_group.this.endpoints :
-    (endpoint.name != "" ? endpoint.name : (
-      length([for e in data.castai_cache_group.this.endpoints : e if e.name == ""]) == 1
-      ? "default"
-      : "default-${idx}"
-      )) => {
-      connection_string = endpoint.connection_string
-      hostname          = endpoint.hostname
-      port              = endpoint.port
-      name              = endpoint.name
-    }
-  }
 }
