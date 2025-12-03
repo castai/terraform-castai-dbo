@@ -26,7 +26,7 @@ resource "castai_cache_configuration" "this" {
 
 # Deploy CAST AI Database Optimizer
 module "castai_dbo" {
-  source = "castai/dbo/castai"
+  source = "github.com/castai/terraform-castai-dbo"
 
   castai_api_token = var.castai_api_token
   cache_group_id   = castai_cache_group.this.id
