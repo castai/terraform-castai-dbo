@@ -35,6 +35,6 @@ variable "dbo_values" {
 
 variable "helm_release_name" {
   type        = string
-  description = "Custom name for the Helm release. "
+  description = "Custom name for the Helm release"
   default     = ""
 }

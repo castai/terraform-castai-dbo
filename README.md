@@ -90,7 +90,7 @@ No modules.
 | <a name="input_dbo_namespace"></a> [dbo\_namespace](#input\_dbo\_namespace) | Kubernetes namespace where DBO will be installed | `string` | `"castai-db-optimizer"` | no |
 | <a name="input_dbo_values"></a> [dbo\_values](#input\_dbo\_values) | List of YAML formatted strings with additional values for the DBO Helm chart | `list(string)` | `[]` | no |
 | <a name="input_dbo_version"></a> [dbo\_version](#input\_dbo\_version) | Version of the castai-dbo Helm chart to install. Defaults to 0.50.0 | `string` | `"0.50.0"` | no |
-| <a name="input_helm_release_name"></a> [helm\_release\_name](#input\_helm\_release\_name) | Custom name for the Helm release. | `string` | `""` | no |
+| <a name="input_helm_release_name"></a> [helm\_release\_name](#input\_helm\_release\_name) | Custom name for the Helm release | `string` | `""` | no |
 
 ## Outputs
 
