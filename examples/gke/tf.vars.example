@@ -1,0 +1,7 @@
+project_id     = "project-id"
+cluster_name   = "cluster-name"
+cluster_region = "us-east1"
+
+# CAST AI Configuration
+castai_api_token = "<your-api-token>"  # Create at console.cast.ai -> API Access keys
+
