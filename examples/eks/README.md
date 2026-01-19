@@ -1,6 +1,6 @@
-# GKE with CAST AI DBO (Database Optimizer)
+# EKS with CAST AI DBO (Database Optimizer)
 
-This example demonstrates how to deploy DBO on an existing GKE cluster:
+This example demonstrates how to deploy DBO on an existing EKS cluster:
 1. Configure DBO cache resources (cache group and configuration)
 2. Deploy the DBO Helm chart using the `terraform-castai-dbo` module
 
@@ -14,16 +14,16 @@ performance and reduce database load.
 | File           | Description                                       |
 |----------------|---------------------------------------------------|
 | `dbo.tf`       | Cache group, configuration, and DBO module        |
-| `providers.tf` | Provider configuration for GCP, CAST AI, and Helm |
+| `providers.tf` | Provider configuration for AWS, CAST AI, and Helm |
 | `variables.tf` | Input variables                                   |
 | `versions.tf`  | Terraform and provider version constraints        |
 
 ## Prerequisites
 
 - Terraform >= 1.3.2
-- Existing GKE cluster
+- Existing EKS cluster
 - CAST AI account with API token
-- Database accessible from your GKE cluster
+- Database accessible from your EKS cluster
 
 ## Usage
 

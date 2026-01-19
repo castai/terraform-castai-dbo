@@ -1,12 +1,18 @@
-# Create a cache group for the PostgreSQL instance.
+# Create a cache group for the PostgreSQL instance
 resource "castai_cache_group" "this" {
   name          = "my-cache-group"
   protocol_type = "PostgreSQL"
 
   endpoints {
-    hostname = "primary.db.example.com"
+    hostname = "my-rds-instance.abcdefghijkl.us-east-1.rds.amazonaws.com"
     port     = 5432
     name     = "primary"
+  }
+
+  endpoints {
+    hostname = "my-rds-instance-ro.abcdefghijkl.eu-north-1.rds.amazonaws.com"
+    port     = 5432
+    name     = "ro"
   }
 }
 
